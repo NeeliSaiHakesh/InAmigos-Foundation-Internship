@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nexora AI — The Autonomous Multi-Agent Intelligence Platform for Modern Enterprises. Deploy deterministic reasoning agents with zero-trust safety guardrails." />
+  <meta name="keywords" content="Nexora AI, Autonomous Agents, Multi-Agent System, Enterprise AI, LLM Orchestration, Machine Learning" />
+  <title>Nexora AI — Autonomous Enterprise Intelligence Platform</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- BACKGROUND GLOWS -->
+  <div class="mesh-glow mesh-1" aria-hidden="true"></div>
+  <div class="mesh-glow mesh-2" aria-hidden="true"></div>
+
+  <!-- NAVIGATION -->
+  <header class="site-header" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Nexora AI Homepage">
+        <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="8" fill="url(#logo-grad)"/>
+          <path d="M9 16L16 9L23 16L16 23L9 16Z" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="16" cy="16" r="3" fill="#FFFFFF"/>
+          <defs>
+            <linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#3B82F6"/>
+              <stop offset="1" stop-color="#8B5CF6"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="brand-text">Nexora<span class="brand-accent">.AI</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#features" class="nav-link">Platform</a>
+        <a href="#demo" class="nav-link">Interactive Demo</a>
+        <a href="#solutions" class="nav-link">Solutions</a>
+        <a href="#metrics" class="nav-link">Impact</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <div class="mobile-cta-wrap">
+          <a href="#demo" class="btn btn-primary btn-sm">Launch Console</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#pricing" class="btn btn-outline btn-sm d-none-sm">Sign In</a>
+        <a href="#demo" class="btn btn-primary btn-sm">Launch Console</a>
+        <button class="hamburger-btn" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="ham-bar"></span>
+          <span class="ham-bar"></span>
+          <span class="ham-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <div class="hero-content" data-animate="fade-up">
+          <div class="badge-pill">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Nexora Engine v3.5 Released — Multi-Agent Consensus</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+
+          <h1 class="hero-headline">
+            Deploy Autonomous AI Agents That <span class="gradient-text">Reason, Plan &amp; Execute</span> at Scale.
+          </h1>
+
+          <p class="hero-subhead">
+            Nexora unifies collaborative multi-agent orchestration, proprietary enterprise knowledge graphs, and zero-trust safety guardrails into a single intelligent workstation.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#demo" class="btn btn-primary btn-lg">
+              <span>Start Free 14-Day Trial</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#features" class="btn btn-secondary btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <span>Explore Architecture</span>
+            </a>
+          </div>
+
+          <div class="hero-trust-meta">
+            <div class="trust-avatars">
+              <span class="avatar av-1">AI</span>
+              <span class="avatar av-2">ML</span>
+              <span class="avatar av-3">OPS</span>
+              <span class="avatar av-4">DEV</span>
+            </div>
+            <div class="trust-text">
+              <strong>Trusted by 14,000+ engineers</strong> at Fortune 500 enterprises &amp; high-growth startups
+            </div>
+          </div>
+        </div>
+
+        <!-- HERO INTERACTIVE CONSOLE -->
+        <div class="hero-visual" data-animate="fade-left">
+          <div class="console-window">
+            <div class="console-header">
+              <div class="window-controls">
+                <span class="win-btn win-close"></span>
+                <span class="win-btn win-min"></span>
+                <span class="win-btn win-max"></span>
+              </div>
+              <div class="console-title">
+                <span class="live-indicator"></span> nexora-orchestrator://cluster-alpha
+              </div>
+              <span class="console-chip">v3.5.2-prod</span>
+            </div>
+
+            <div class="console-body" id="heroConsoleLogs">
+              <div class="log-line text-muted">[00:00:01] Initializing Autonomous Swarm: 4 Specialized Agents linked...</div>
+              <div class="log-line text-info"><span class="badge-role planner">PLANNER</span> Decomposing query: 'Analyze Q3 supply risk across APAC nodes'</div>
+              <div class="log-line text-purple"><span class="badge-role analyst">ANALYST</span> Querying Neural Vector Index (14.2M enterprise docs scanned in 118ms)</div>
+              <div class="log-line text-amber"><span class="badge-role auditor">AUDITOR</span> Validating SOC2 &amp; GDPR compliance constraints: [PASSED: 100%]</div>
+              <div class="log-line text-success"><span class="badge-role executor">EXECUTOR</span> Consensus achieved across 4 agents with 99.4% confidence rating</div>
+              <div class="log-terminal-output">
+                <span class="prompt-sym">&gt;</span> <span class="typing-text">Synthesizing optimized logistics routing &amp; automated supplier trigger...</span>
+              </div>
+            </div>
+
+            <div class="console-footer">
+              <div class="status-metric">
+                <span class="sm-label">Latency</span>
+                <span class="sm-val">240ms</span>
+              </div>
+              <div class="status-metric">
+                <span class="sm-label">Accuracy</span>
+                <span class="sm-val">99.8%</span>
+              </div>
+              <div class="status-metric">
+                <span class="sm-label">Safety Filter</span>
+                <span class="sm-val active">Guarded</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LOGO TICKER SECTION -->
+    <section class="ticker-section">
+      <div class="container">
+        <p class="ticker-label">POWERING AUTONOMOUS WORKFLOWS AT LEADING TECH COMPANIES</p>
+        <div class="ticker-logos">
+          <span class="logo-item">AURA.TECH</span>
+          <span class="logo-item">NOVASYNC</span>
+          <span class="logo-item">SYNTHESIS.IO</span>
+          <span class="logo-item">DATALATTICE</span>
+          <span class="logo-item">HYPERCLOUD</span>
+          <span class="logo-item">QUANTUMSCALE</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE PLATFORM CAPABILITIES -->
+    <section class="section-pad" id="features">
+      <div class="container">
+        <div class="section-heading text-center" data-animate="fade-up">
+          <span class="section-eyebrow">Enterprise Capabilities</span>
+          <h2 class="section-title">Engineered for Autonomous Reasoning, Reliability &amp; Control</h2>
+          <p class="section-desc">Legacy generative AI outputs hallucinated text. Nexora executes multi-step deterministic tasks backed by enterprise guardrails.</p>
+        </div>
+
+        <div class="features-grid">
+          
+          <article class="feature-card" data-animate="fade-up" data-delay="0">
+            <div class="feature-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
+            <h3 class="feature-title">Multi-Agent Swarm Orchestration</h3>
+            <p class="feature-text">Deploy role-specialized agents (Planner, Researcher, Code Reviewer, Auditor) that debate, refine, and verify findings through consensus before output.</p>
+            <span class="feature-badge">Zero Hallucination</span>
+          </article>
+
+          <article class="feature-card" data-animate="fade-up" data-delay="80">
+            <div class="feature-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            </div>
+            <h3 class="feature-title">Enterprise Neural Knowledge Graph</h3>
+            <p class="feature-text">Connect Snowflake, BigQuery, Notion, Slack, and Salesforce into real-time semantic embeddings with sub-millisecond graph retrieval and access controls.</p>
+            <span class="feature-badge">Unified RAG</span>
+          </article>
+
+          <article class="feature-card" data-animate="fade-up" data-delay="160">
+            <div class="feature-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3 class="feature-title">Zero-Trust Security &amp; Data Sovereignty</h3>
+            <p class="feature-text">Deploy on VPC, on-premise, or hybrid cloud. Zero data retention agreements, HIPAA &amp; SOC2 Type II certifications, and continuous PII redaction.</p>
+            <span class="feature-badge">SOC2 / HIPAA / GDPR</span>
+          </article>
+
+          <article class="feature-card" data-animate="fade-up" data-delay="0">
+            <div class="feature-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3 class="feature-title">Autonomous Action &amp; Tool Calling</h3>
+            <p class="feature-text">Agents safely execute API calls, run Python code sandbox evaluations, dispatch webhooks, and manage database migrations under human-in-the-loop policies.</p>
+            <span class="feature-badge">100+ Integrations</span>
+          </article>
+
+          <article class="feature-card" data-animate="fade-up" data-delay="80">
+            <div class="feature-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="feature-title">Deterministic Output Guardrails</h3>
+            <p class="feature-text">Enforce strict JSON schema adherence, factual consistency score gates, toxicity screening, and regulatory compliance before any agent action executes.</p>
+            <span class="feature-badge">99.98% Guarded</span>
+          </article>
+
+          <article class="feature-card" data-animate="fade-up" data-delay="160">
+            <div class="feature-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <h3 class="feature-title">Real-Time Observability &amp; Telemetry</h3>
+            <p class="feature-text">Trace full agent thought-chains, token costs, latency spikes, and cache hit rates in OpenTelemetry-compliant dashboards with automated alerting.</p>
+            <span class="feature-badge">OpenTelemetry Ready</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE PLAYGROUND / LIVE DEMO -->
+    <section class="section-pad bg-surface" id="demo">
+      <div class="container">
+        <div class="section-heading text-center" data-animate="fade-up">
+          <span class="section-eyebrow">Interactive Simulator</span>
+          <h2 class="section-title">Experience Multi-Agent Consensus Live</h2>
+          <p class="section-desc">Select an enterprise challenge below and watch Nexora's autonomous agents collaborate, debate, and verify the final answer.</p>
+        </div>
+
+        <div class="playground-card" data-animate="fade-up">
+          <!-- Preset buttons -->
+          <div class="playground-tabs">
+            <button class="tab-btn active" data-task="finance">📈 FinTech Risk Audit</button>
+            <button class="tab-btn" data-task="supply">🚚 Supply Chain Disruption</button>
+            <button class="tab-btn" data-task="cyber">🛡️ Zero-Day Security Patch</button>
+            <button class="tab-btn" data-task="esg">🌱 ESG Carbon Optimization</button>
+          </div>
+
+          <div class="playground-layout">
+            <!-- Left: Workflow Stepper -->
+            <div class="agent-stepper">
+              <h4 class="stepper-title">Autonomous Swarm Pipeline</h4>
+              
+              <div class="step-item active" id="step1">
+                <div class="step-circle">1</div>
+                <div class="step-info">
+                  <strong>Task Decomposition</strong>
+                  <span>Agent Planner breaks request into atomic queries</span>
+                </div>
+              </div>
+
+              <div class="step-item" id="step2">
+                <div class="step-circle">2</div>
+                <div class="step-info">
+                  <strong>Semantic Knowledge Synthesis</strong>
+                  <span>Retrieval across multi-modal enterprise data</span>
+                </div>
+              </div>
+
+              <div class="step-item" id="step3">
+                <div class="step-circle">3</div>
+                <div class="step-info">
+                  <strong>Regulatory &amp; Guardrail Audit</strong>
+                  <span>Zero-trust safety verification</span>
+                </div>
+              </div>
+
+              <div class="step-item" id="step4">
+                <div class="step-circle">4</div>
+                <div class="step-info">
+                  <strong>Consensus &amp; Action Dispatch</strong>
+                  <span>Deterministic schema output produced</span>
+                </div>
+              </div>
+
+              <button class="btn btn-primary btn-block mt-4" id="runSimulationBtn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                <span>Re-Run Swarm Execution</span>
+              </button>
+            </div>
+
+            <!-- Right: Live Result Display -->
+            <div class="playground-output">
+              <div class="output-header">
+                <span class="output-dot"></span>
+                <span id="outputTitle">Executing: FinTech Portfolio Risk &amp; Liquidity Audit</span>
+                <span class="exec-time" id="execTimer">Execution time: 0.38s</span>
+              </div>
+              <div class="output-content" id="outputContent">
+                <!-- Dynamic text populated by JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METRICS & IMPACT -->
+    <section class="section-pad" id="metrics">
+      <div class="container">
+        <div class="metrics-card" data-animate="fade-up">
+          <div class="metric-item">
+            <span class="metric-number" data-target="12">0</span><span class="metric-suffix">x</span>
+            <p class="metric-label">Faster Task Completion vs Legacy RPA</p>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number" data-target="99">0</span><span class="metric-suffix">.98%</span>
+            <p class="metric-label">Deterministic Output Reliability</p>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number" data-target="68">0</span><span class="metric-suffix">%</span>
+            <p class="metric-label">Operational Cost Reduction</p>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number" data-target="4">0</span><span class="metric-suffix">.8M+</span>
+            <p class="metric-label">Autonomous Production Tasks Run</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING TIERS -->
+    <section class="section-pad bg-surface" id="pricing">
+      <div class="container">
+        <div class="section-heading text-center" data-animate="fade-up">
+          <span class="section-eyebrow">Predictable Pricing</span>
+          <h2 class="section-title">Scale Autonomously From Prototype to Production</h2>
+          <p class="section-desc">Transparent plans with zero surprise token markups. 14-day free trial on all tiers.</p>
+
+          <!-- Toggle -->
+          <div class="billing-toggle-wrap">
+            <span class="billing-label active" id="monthlyLabel">Monthly</span>
+            <button class="toggle-switch" id="billingToggle" aria-label="Toggle annual billing"></button>
+            <span class="billing-label" id="annualLabel">Annual <span class="discount-pill">Save 20%</span></span>
+          </div>
+        </div>
+
+        <div class="pricing-grid">
+          
+          <!-- Starter -->
+          <div class="pricing-card" data-animate="fade-up" data-delay="0">
+            <span class="pricing-tier">Developer</span>
+            <p class="pricing-desc">For AI engineers building prototype agent workflows.</p>
+            <div class="pricing-price">
+              <span class="currency">$</span>
+              <span class="price-val" data-monthly="39" data-annual="29">39</span>
+              <span class="period">/month</span>
+            </div>
+            <ul class="pricing-features">
+              <li>✓ Up to 5 Autonomous Agents</li>
+              <li>✓ 100,000 Orchestration Steps / mo</li>
+              <li>✓ Standard Vector RAG Index</li>
+              <li>✓ Python &amp; REST SDKs</li>
+              <li>✓ Community Discord Support</li>
+            </ul>
+            <a href="#demo" class="btn btn-outline btn-block">Start Free Trial</a>
+          </div>
+
+          <!-- Professional (Featured) -->
+          <div class="pricing-card featured" data-animate="fade-up" data-delay="80">
+            <div class="popular-ribbon">Most Popular</div>
+            <span class="pricing-tier">Scale Team</span>
+            <p class="pricing-desc">For growing engineering teams deploying production swarms.</p>
+            <div class="pricing-price">
+              <span class="currency">$</span>
+              <span class="price-val" data-monthly="119" data-annual="89">119</span>
+              <span class="period">/month</span>
+            </div>
+            <ul class="pricing-features">
+              <li>✓ Unlimited Autonomous Agents</li>
+              <li>✓ 1,000,000 Orchestration Steps / mo</li>
+              <li>✓ Enterprise Knowledge Graph RAG</li>
+              <li>✓ Tool &amp; Webhook Calling Sandbox</li>
+              <li>✓ Deterministic Guardrails &amp; SOC2</li>
+              <li>✓ Priority 24/7 Slack Support</li>
+            </ul>
+            <a href="#demo" class="btn btn-primary btn-block">Get Started Now</a>
+          </div>
+
+          <!-- Enterprise -->
+          <div class="pricing-card" data-animate="fade-up" data-delay="160">
+            <span class="pricing-tier">Enterprise Global</span>
+            <p class="pricing-desc">For global organizations requiring VPC &amp; custom governance.</p>
+            <div class="pricing-price">
+              <span class="currency">$</span>
+              <span class="price-val" data-monthly="299" data-annual="249">299</span>
+              <span class="period">/month</span>
+            </div>
+            <ul class="pricing-features">
+              <li>✓ Custom Dedicated Swarm Clusters</li>
+              <li>✓ Unlimited Orchestration Steps</li>
+              <li>✓ Self-Hosted / On-Premise VPC Option</li>
+              <li>✓ Custom Fine-Tuned Model Weights</li>
+              <li>✓ Dedicated Solutions Architect</li>
+              <li>✓ 99.99% Guaranteed SLA</li>
+            </ul>
+            <a href="#demo" class="btn btn-outline btn-block">Contact Enterprise Sales</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ ACCORDION -->
+    <section class="section-pad" id="faq">
+      <div class="container">
+        <div class="section-heading text-center" data-animate="fade-up">
+          <span class="section-eyebrow">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-desc">Everything you need to know about autonomous multi-agent orchestration and security.</p>
+        </div>
+
+        <div class="faq-accordion" data-animate="fade-up">
+          
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How do Nexora's autonomous agents prevent hallucination?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Nexora uses a proprietary Multi-Agent Consensus Architecture. Before any result is generated, a dedicated Auditor Agent benchmarks proposed actions against your enterprise Knowledge Graph and deterministic JSON schemas. If factual consistency falls below 99.5%, the Planner re-evaluates the query.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Is our corporate data used to train foundation models?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Never. Nexora operates under strict zero-data retention (ZDR) agreements. Your data is processed in isolated, encrypted memory spaces and is never used to train public or foundation AI models.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can we connect our internal databases and REST APIs?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. Nexora provides native bi-directional connectors for Snowflake, BigQuery, PostgreSQL, Salesforce, GitHub, Slack, and custom OpenAPI endpoints with granular RBAC permissions.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What frameworks are supported by the Nexora SDK?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Nexora offers first-party SDKs for Python, TypeScript/Node.js, Go, and cURL, with out-of-the-box support for LangChain, LlamaIndex, and OpenAI Assistant API drop-in compatibility.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BOTTOM CTA BANNER -->
+    <section class="section-pad bg-cta-banner">
+      <div class="container text-center" data-animate="fade-up">
+        <h2 class="cta-title">Ready to Automate Your Enterprise Workflows?</h2>
+        <p class="cta-desc">Join thousands of high-velocity engineering teams deploying autonomous AI agents today. No credit card required.</p>
+        <div class="cta-btns">
+          <a href="#demo" class="btn btn-primary btn-lg">Start Free 14-Day Trial</a>
+          <a href="#pricing" class="btn btn-secondary btn-lg">Schedule Live Architecture Demo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <svg class="logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none">
+              <rect width="32" height="32" rx="8" fill="url(#logo-grad-f)"/>
+              <path d="M9 16L16 9L23 16L16 23L9 16Z" stroke="#FFFFFF" stroke-width="2"/>
+              <circle cx="16" cy="16" r="3" fill="#FFFFFF"/>
+              <defs>
+                <linearGradient id="logo-grad-f" x1="0" y1="0" x2="32" y2="32">
+                  <stop stop-color="#3B82F6"/>
+                  <stop offset="1" stop-color="#8B5CF6"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <span class="brand-text">Nexora<span class="brand-accent">.AI</span></span>
+          </div>
+          <p class="footer-tagline">Autonomous Enterprise Intelligence &amp; Multi-Agent Orchestration.</p>
+          <div class="status-pill">
+            <span class="status-dot-green"></span> All Swarm Systems Operational (99.99%)
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-title">Platform</h5>
+          <ul>
+            <li><a href="#features">Multi-Agent Engine</a></li>
+            <li><a href="#features">Neural Knowledge Graph</a></li>
+            <li><a href="#demo">Interactive Simulator</a></li>
+            <li><a href="#pricing">Enterprise Guardrails</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-title">Solutions</h5>
+          <ul>
+            <li><a href="#demo">FinTech Risk Automation</a></li>
+            <li><a href="#demo">Supply Chain Intelligence</a></li>
+            <li><a href="#demo">Cybersecurity Remediation</a></li>
+            <li><a href="#demo">ESG &amp; Carbon Tracking</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-title">Company &amp; Legal</h5>
+          <ul>
+            <li><a href="#hero">About Nexora</a></li>
+            <li><a href="#features">Security &amp; Compliance</a></li>
+            <li><a href="#faq">Privacy Policy</a></li>
+            <li><a href="#faq">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nexora AI Systems, Inc. All rights reserved. Built with AI-Powered Web Generation.</p>
+        <p class="footer-note">Task 3: AI Website Generation Project.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

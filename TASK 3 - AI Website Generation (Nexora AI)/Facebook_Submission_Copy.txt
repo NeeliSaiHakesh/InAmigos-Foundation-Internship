@@ -1,0 +1,14 @@
+🤖 Excited to share Task 3: AI-Powered Website Generation with InAmigos Foundation! 🌐✨
+
+For Task 3 of my internship with InAmigos Foundation ("Uniting Minds for Change"), I explored how modern AI tools can be harnessed to design and build a complete enterprise-grade website from concept to deployment.
+
+I created "Nexora AI" — an Autonomous Multi-Agent Intelligence Platform featuring:
+🔹 Clean dark-mode UI with modern glassmorphism
+🔹 Interactive live terminal simulating multi-agent AI collaboration
+🔹 Functional playground testing real-time workflows (Finance, Supply Chain, Cyber Security, ESG)
+🔹 Interactive pricing switchers, metrics, and accessible FAQ accordion
+🔹 Pure HTML5, CSS3, and Vanilla JavaScript with zero bloat!
+
+Learning to combine AI generation with structured UX principles has been an incredible experience. Thank you InAmigos Foundation and Mr. Govind Shukla for this opportunity! 🙌
+
+#InAmigos #InAmigosFoundation #AIWebGeneration #WebDesign #UIUX #TechInternship #StudentIntern #AIInnovation

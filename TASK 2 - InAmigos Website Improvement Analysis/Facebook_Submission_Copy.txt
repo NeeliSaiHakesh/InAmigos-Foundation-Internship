@@ -1,0 +1,23 @@
+🌟 Excited to share my Task 2 Submission: Website Improvement & UX Analysis for InAmigos Foundation! 💡📊
+
+As part of my internship with InAmigos Foundation ("Uniting Minds for Change"), I had the opportunity to analyze the organization's official website (https://inamigosfoundation.org.in) and propose actionable improvements across design, usability, accessibility, and content structure.
+
+InAmigos Foundation does truly inspiring grassroots work across 28 states, touching over 50,000+ lives through its 6 core initiatives:
+✨ Project Seva (Community relief & food support)
+✨ Project Bachpanshala (Underprivileged child education)
+✨ Project Jeev (Animal welfare & rescue)
+✨ Project Udaan (Women empowerment & skill training)
+✨ Project Prakriti (Environmental conservation & plantation)
+✨ Project Vikas (Youth skill development & employability)
+
+To help strengthen donor trust, enhance volunteer onboarding, and elevate corporate CSR engagement, my analysis focused on:
+🔹 Transforming hero sections into an editorial, human-centered narrative
+🔹 Improving content scannability (breaking down dense walls of text into structured highlights and certified badges)
+🔹 Enhancing accessibility (improving text contrast ratios to meet WCAG standards)
+🔹 Ensuring seamless mobile navigation and clear calls-to-action
+
+I’ve compiled all detailed findings, marked-up screenshots, and recommendations into a comprehensive report. Grateful to InAmigos Foundation and Mr. Govind Shukla for this valuable learning experience! 🙌
+
+🔗 Visit their official website: https://inamigosfoundation.org.in
+
+#InAmigos #InAmigosFoundation #UIUX #WebsiteAnalysis #NonProfit #SocialImpact #WebDesign #Internship #StudentInternship #DigitalDesign
